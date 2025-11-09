@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        /* 基础样式设置 - 简洁白底黑字 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* 图片和名字区域 */
+        .profile-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+        }
+        
+        .profile-photo {
+            max-width: 150px;
+            height: auto;
+            margin-right: 2rem;
+        }
+        
+        .name-box {
+            flex: 1;
+            border: 1px solid #000;
+            padding: 2rem;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .name {
+            font-size: 2rem;
+            font-weight: normal;
+        }
+        
+        /* 内容区块通用样式 */
+        .section {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #000;
+            padding-bottom: 1.5rem;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        /* 列表和文本样式 */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+        }
+        
+        p {
+            margin-bottom: 0.8rem;
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .profile-photo {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .name-box {
+                width: 100%;
+                min-height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 个人信息区域 -->
+    <div class="profile-container">
+        <img class="profile-photo" src="LZ.png" alt="证件照">
+        <div class="name-box">
+            <h1 class="name">[您的名字]</h1>
+        </div>
+    </div>
+    
+    <!-- 教育背景 -->
+    <div class="section">
+        <ul>
+            <li><strong>[时间段]</strong> [学校名称] [学位名称] [专业]</li>
+            <li><strong>[时间段]</strong> [学校名称] [学位名称] [专业]</li>
+            <!-- 添加更多教育经历 -->
+        </ul>
+    </div>
+    
+    <!-- 学术论文及专利 -->
+    <div class="section">
+        <ul>
+            <li><strong>[论文标题]</strong> [作者列表], [期刊名称], [卷号], [页码], [发表年份]</li>
+            <li><strong>[专利名称]</strong> [专利号], [申请年份]</li>
+            <!-- 添加更多学术论文及专利 -->
+        </ul>
+    </div>
+    
+    <!-- 专业奖项 -->
+    <div class="section">
+        <ul>
+            <li><strong>[奖项名称]</strong> [颁发机构], [获得年份]</li>
+            <li><strong>[奖项名称]</strong> [颁发机构], [获得年份]</li>
+            <!-- 添加更多专业奖项 -->
+        </ul>
+    </div>
+    
+    <!-- 科研经历 -->
+    <div class="section">
+        <ul>
+            <li><strong>[时间段]</strong> [项目名称], [担任角色], [研究机构]</li>
+            <p>[项目描述和主要贡献]</p>
+            <li><strong>[时间段]</strong> [项目名称], [担任角色], [研究机构]</li>
+            <p>[项目描述和主要贡献]</p>
+            <!-- 添加更多科研经历 -->
+        </ul>
+    </div>
+    
+    <!-- 奖学金及荣誉称号 -->
+    <div class="section">
+        <ul>
+            <li><strong>[奖学金/荣誉名称]</strong> [颁发机构], [获得年份]</li>
+            <li><strong>[奖学金/荣誉名称]</strong> [颁发机构], [获得年份]</li>
+            <!-- 添加更多奖学金及荣誉称号 -->
+        </ul>
+    </div>
+    
+    <!-- 访学经历 -->
+    <div class="section">
+        <ul>
+            <li><strong>[时间段]</strong> [访问机构], [访问身份]</li>
+            <p>[访学目的和主要成果]</p>
+            <li><strong>[时间段]</strong> [访问机构], [访问身份]</li>
+            <p>[访学目的和主要成果]</p>
+            <!-- 添加更多访学经历 -->
+        </ul>
+    </div>
+    
+    <!-- 授课经历 -->
+    <div class="section">
+        <ul>
+            <li><strong>[时间段]</strong> [课程名称], [担任职位], [教学机构]</li>
+            <p>[课程简介]</p>
+            <li><strong>[时间段]</strong> [课程名称], [担任职位], [教学机构]</li>
+            <p>[课程简介]</p>
+            <!-- 添加更多授课经历 -->
+        </ul>
+    </div>
+    
+    <!-- 工作经历 -->
+    <div class="section">
+        <ul>
+            <li><strong>[时间段]</strong> [职位名称], [公司/机构名称]</li>
+            <p>[工作职责和主要成就]</p>
+            <li><strong>[时间段]</strong> [职位名称], [公司/机构名称]</li>
+            <p>[工作职责和主要成就]</p>
+            <!-- 添加更多工作经历 -->
+        </ul>
+    </div>
+    
+    <!-- 参会经历 -->
+    <div class="section">
+        <ul>
+            <li><strong>[会议名称]</strong> [会议地点], [参会年份]</li>
+            <li><strong>[会议名称]</strong> [会议地点], [参会年份]</li>
+            <!-- 添加更多参会经历 -->
+        </ul>
+    </div>
+    
+    <!-- 联系方式 -->
+    <div class="section">
+        <ul>
+            <li><strong>电子邮箱:</strong> [您的邮箱地址]</li>
+            <li><strong>联系电话:</strong> [您的电话号码]</li>
+            <li><strong>通讯地址:</strong> [您的地址]</li>
+            <!-- 添加更多联系方式 -->
+        </ul>
+    </div>
+</body>
+</html>
